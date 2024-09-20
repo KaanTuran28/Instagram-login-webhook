@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Updated to Instagram's preferred font */
+}
+
+body{
+    background-color: #fafafa;
+}
+
+#main-container{
+    display: flex;
+    margin-top: 150px;
+}
+
+#banner-container,
+#formContainer{
+    flex: 1 1 0;
+    width: 50%;
+}
+
+#banner-container{
+    text-align: right;
+}
+
+#banner-container img{
+    width: 100%;
+    margin-right: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+}
+
+#formContainer{
+    text-align: center;
+}
+
+#formBox{
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    margin-top: 30px;
+    padding-bottom: 25px;
+    border-radius: 8px; /* Slightly rounded edges for a modern feel */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+#logoInsta{
+    width: 175px;
+    height: 50px;
+    margin: 30px auto 12px;
+}
+
+#loginForm input{
+    border: 1px solid #dbdbdb;
+    background: #fafafa;
+    border-radius: 5px;
+    height: 40px;
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 11px;
+    color: #262626; /* Darker text for inputs */
+}
+
+#loginForm input::placeholder{
+    color: #999999; /* Placeholder color in line with Instagram's design */
+}
+
+#loginForm input[type="submit"]{
+    background: #54a5f1; /* Instagram's login button color */
+    opacity: 1; /* Make the button fully visible by default */
+    color: #ffffff;
+    height: 35px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer; /* Show pointer on hover */
+    border-radius: 12px; /* Rounds the button corners */
+}
+
+
+#loginForm input[type="submit"]:hover{
+    background: #54a5f1; /* Slightly darker shade on hover */
+}
+
+.separator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.line1, .line2 {
+    flex: 1;
+    border-top: 1px solid #dbdbdb;
+    margin: 0 10px;
+}
+
+.separator span {
+    padding: 0 10px;
+    color: #999999; /* Softer gray color for separator text */
+}
+
+#logoFace{
+    height: 15px;
+}
+
+#outroslinks{
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+#esqueciSenha a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #3b477c; 
+
+}
+
+#registro{
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 350px;
+    border-radius: 5px;
+    padding-top: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#registro p{
+    padding: 25px;
+    font-size: 14px;
+    color: #262626; /* Darker text for regular content */
+}
+
+#registro a{
+    text-decoration: none;
+    color: #3897f0; /* Instagram blue */
+    font-weight: bold;
+}
+
+#baixeInsta{
+    display: block;
+    margin: 20px 0;
+    width: 350px;
+}
+
+#baixeInsta a{
+    text-decoration: none;
+    margin: 0;
+}
+
+#baixeInsta img{
+    margin: 20px 5px;
+    height: 45px;
+}
+
+#linksRodape{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#linksRodape a{
+    font-size: 11px;
+    text-decoration: none;
+    margin-right: 15px;
+    color: #999999; /* Instagram footer text color */
+}
+
+#copyright{
+    justify-content: center;
+    display: flex;
+    margin-top: 25px;
+    color: #999999;
+}
+
+/* RESPONSIVENESS */
+@media(max-width: 450px){
+    body {
+        background-color: #ffffff;
+    }
+
+    #banner-container{
+        display: none;
+    }
+
+    #formBox, #main-container{
+       margin-top: 0;
+    }
+
+    #formContainer,
+    #formBox,
+    #registro,
+    #baixeInsta,
+    .separator{
+        width: 100%;
+        border: none;
+    }
+
+    #separator span{
+        margin-left: 25px;
+    }
+
+    footer{
+        width: 90%;
+    }
+
+    #linksRodape{
+        margin-left: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #linksRodape li{
+        margin-bottom: 10px;
+    }
+
+    #copyright{
+        margin-left: 30px;
+    }
+
+}
